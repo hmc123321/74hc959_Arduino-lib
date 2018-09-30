@@ -46,7 +46,7 @@ void hc595_8 (uchar data){
   digitalWrite (STCP,LOW);
 }
 
-uint cti(uchar h,uchar l){
+uint cti(uchar h,uchar l){//a function for combine two eight_bit data into one sixteen_bit data.
   uint data;
   data=(h/0x10)*0x1000+(h%0x10)*0x100+l;
   return data;
